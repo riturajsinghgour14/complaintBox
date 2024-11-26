@@ -1,0 +1,26 @@
+{
+  "name": "complaint-box",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "main": "node server.js",
+    "lit": "npm run dev --prefix frontend",
+    "start": "concurrently \"npm run main\" \"npm run lit",
+    "dev": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Rituraj Singh Gour",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "description": ""
+}
