@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "main": "node server.js",
+    "main": "node backend/server.js",
     "lit": "npm run dev --prefix frontend",
     "start": "concurrently \"npm run main\" \"npm run lit\"",
     "dev": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
