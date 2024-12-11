@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getTickets } from '../../feartures/Ticket/TicketSlice';
+// import { getTickets } from '../../feartures/Ticket/TicketSlice';
+import { getTickets } from '../../feartures/ticket/ticketSlice';
 import BackButton from '../components/BackButton';
 import { Link } from 'react-router-dom';
 
