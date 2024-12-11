@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
-import { raiseTicket } from '../../feartures/Ticket/TicketSlice';
+// import { raiseTicket } from '../../feartures/Ticket/TicketSlice';
+import { raiseTicket } from '../../feartures/ticket/ticketSlice';
 import BackButton from '../components/BackButton';
 import { toast } from 'react-toastify';
 
