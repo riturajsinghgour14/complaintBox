@@ -22,7 +22,6 @@ const getTickets = expressAsyncHandler(async (req, res) => {
 
 // Get Single Ticket
 const getTicket = expressAsyncHandler(async (req, res) => {
-  //Check is user exists in our DB
   const user = await User.findById(req.user._id);
 
   if (!user) {

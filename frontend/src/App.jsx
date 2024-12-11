@@ -7,11 +7,11 @@ import Login from './screens/Login'
 import PageNoteFound from './screens/PageNoteFound'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Users from './screens/users'
-import Complaints from './screens/Complaints'
-import MyComplaints from './screens/MyComplaints'
-import Complaint from './screens/complaint'
-import NewComplaint from './screens/NewComplaint'
+import Users from './screens/users';
+import Complaints from './screens/Complaints';
+import MyComplaints from './screens/MyComplaints';
+import Complaint from './screens/complaint';
+import NewComplaint from './screens/NewComplaint';
 
 
 const App = () => {
