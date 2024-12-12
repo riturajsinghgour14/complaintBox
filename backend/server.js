@@ -37,7 +37,7 @@ let NODE_ENV = "production"
 if(NODE_ENV === "production"){
   const _dirname = path.resolve();
   app.use("/uploads", express.static("/var/data/uploads"));
-  app.use(express.static(path.join(_dirname,"frontend/dist")));
+  app.use(express.static(path.join(_dirname,"/frontend/dist")));
  
   app.get("*", (req,res) => 
   res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
@@ -45,7 +45,7 @@ if(NODE_ENV === "production"){
 }
 else{
   const _dirname = path.resolve();
-  app.use("/uploads", express.static(path.join(_dirname, "upload")));
+  app.use("/uploads", express.static(path.join(_dirname, "/upload")));
   app.get("/",(req,res) => {
     res.send("API is running...");
   });
