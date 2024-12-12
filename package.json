@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "main": "node backend/server.js",
-    "lit": "npm run build --prefix frontend && npm run start --prefix frontend",
-    "start": "concurrently \"npm run main\" \"npm run lit\"",
-    "dev": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-  },
+  "main": "node backend/server.js",
+  "lit": "npm run build --prefix frontend && npm run start --prefix frontend",
+  "start": "concurrently \"npm run main\" \"npm run lit\"",
+  "dev": "npm install && npm install --prefix frontend && npm run build --prefix frontend && npm run start --prefix frontend"
+}
+,
   "author": "Rituraj Singh Gour",
   "license": "ISC",
   "dependencies": {
