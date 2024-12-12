@@ -21,9 +21,7 @@ app.use("/api/user", require("../backend/routes/userRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 
 // Uploads Folder Static Serving
-const uploadPath = process.env.NODE_ENV === "production"
-  ? "/var/data/uploads"
-  : path.join(__dirname, "uploads");
+const uploadPath =  path.join(__dirname, "uploads");
 app.use("/uploads", express.static(uploadPath));
 
 // Error Handler Middleware
