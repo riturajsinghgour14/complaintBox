@@ -29,7 +29,7 @@ app.use(errorHandler);
 
 // Serve Frontend for Production
 if (process.env.NODE_ENV === "production") {
-  const frontendPath = path.resolve(__dirname, "frontend", "dist");
+  const frontendPath = path.resolve(__dirname, "../frontend", "dist");
   app.use(express.static(frontendPath));
 
   app.get("*", (req, res) => {
