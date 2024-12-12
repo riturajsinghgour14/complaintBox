@@ -83,7 +83,7 @@ const {user, isLoading, isError, isSuccess,message} = useSelector((state) => sta
             <input 
            required 
            className='form-control my-2'
-           type="text" 
+           type="password" 
            placeholder='Enter Password'
            name='password'
            value= {password}
@@ -92,7 +92,7 @@ const {user, isLoading, isError, isSuccess,message} = useSelector((state) => sta
             <input 
             required 
            className='form-control my-2'
-           type="text" 
+           type="password" 
            placeholder='Confirm Password'
            name='password2'
            value= {password2}

@@ -66,7 +66,7 @@ const {user, isLoading, isError, message} = useSelector((state) => state.auth)
             <input 
            required 
            className='form-control my-2'
-           type="text" 
+           type="password" 
            placeholder='Enter Password'
            name='password'
            value={password}
