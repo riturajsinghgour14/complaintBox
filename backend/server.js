@@ -26,11 +26,12 @@ app.use("/uploads", express.static(uploadPath));
 
 // Error Handler Middleware
 app.use(errorHandler);
-
+console.log("Current NODE_ENV:", process.env.NODE_ENV);
 // Serve Frontend for Production
 if (process.env.NODE_ENV === "production") {
   const frontendPath = path.resolve(__dirname, "../frontend", "dist");
   app.use(express.static(frontendPath));
+  console.log("Resolved frontend path:", frontendPath);
 
   app.get("*", (req, res) => {
     res.sendFile(path.join(frontendPath, "index.html"));
