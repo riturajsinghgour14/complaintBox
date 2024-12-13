@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = '/api/admin'
+// const API_URL = '/api/admin'
 
 const fetchUsers = async (token) => {
     const options = {

@@ -20,7 +20,7 @@ const fetchTicket = async (ticketId, token) => {
       },
     };
   
-    const response = await axios.get( 'http://localhost:8081/api/ticket/' + ticketId, options);
+    const response = await axios.get( 'http://localhost:8081/api/ticket/:id', options);
     return response.data;
   };
 
