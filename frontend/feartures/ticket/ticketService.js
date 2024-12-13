@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = '/api/ticket/'
+// const API_URL = '/api/ticket/'
 
 const fetchTickets = async (token) => {
     const options = {
@@ -9,7 +9,7 @@ const fetchTickets = async (token) => {
             
         }   
     };
- const response = await axios.get(API_URL,options)
+ const response = await axios.get( 'http://localhost:8081/api/ticket/',options)
  return response.data;
 };
 
@@ -20,7 +20,7 @@ const fetchTicket = async (ticketId, token) => {
       },
     };
   
-    const response = await axios.get(API_URL + "/" + ticketId, options);
+    const response = await axios.get( 'http://localhost:8081/api/ticket/' + ticketId, options);
     return response.data;
   };
 
@@ -30,7 +30,7 @@ const fetchTicket = async (ticketId, token) => {
         Authorization: `Bearer ${token}`,
       },
     };
-    const response = await axios.post(API_URL, formData, options);
+    const response = await axios.post( 'http://localhost:8081/api/ticket/', formData, options);
     return response.data;
   };
 

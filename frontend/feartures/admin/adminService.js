@@ -9,7 +9,7 @@ const fetchUsers = async (token) => {
             
         }   
     };
- const response = await axios.get(API_URL + "/users",options)
+ const response = await axios.get('http://localhost:8081/api/admin/users',options)
  return response.data;
 };
 
@@ -20,7 +20,7 @@ const fetchComplaints = async (token) => {
             
         }   
     };
- const response = await axios.get(API_URL + "/tickets",options)
+ const response = await axios.get('http://localhost:8081/api/admin/tickets',options)
  return response.data;
 };
 
